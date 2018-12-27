@@ -1,8 +1,11 @@
-var chocolateBars = [snikers, hundred grand, kitkat, skittles];
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
 
-chocolateBars.push ("toblerone");
-chocolateBars.unshift ("cadbury");
+function destructivelyAddElementToBeginningOfArray(arr, newVal){
+  return arr.push(newVal)
+}
 
-function accessElementInArray(arr, index) {
-  return ;
+function addElementToBeginningOfArray(arr, newVal){
+    arr.unshift(newVal);
+  
+    return arr
 }
